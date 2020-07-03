@@ -6,15 +6,15 @@
 import torch
 import numpy as np
 import os
-from secondloader import traffic_dataset
+from utils.secondloader import traffic_dataset
 import pickle
 from configPreprocess import config
-from create_masks import mask_creator
+from utils.create_masks import mask_creator
 import shutil
 import scipy
 import networkx as nx
 import h5py
-from OSM import getMaskFromOSM, getStreetClusters
+from utils.OSM import getMaskFromOSM, getStreetClusters
 
 if __name__ == '__main__':
     
@@ -52,7 +52,7 @@ if __name__ == '__main__':
                 shutil.rmtree(os.path.join(graph_target, element))            
     else:
         os.mkdir(graph_target)
-    
+    mask_type = 'xxx'
     # Preprocessing for every city
     for city in cities:
         

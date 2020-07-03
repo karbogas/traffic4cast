@@ -6,9 +6,9 @@
 from configMain import config
 import torch
 import torch_geometric
-from graphloader import geometric_dataset
-from modelCollection import KipfNet, KipfNetDoublePool
-from visual_TB import Visualizer
+from utils.graphloader import geometric_dataset
+from utils.modelCollection import KipfNet, KipfNetDoublePool
+from utils.visual_TB import Visualizer
 import os
 from datetime import datetime
 import time

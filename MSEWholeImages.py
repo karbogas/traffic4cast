@@ -6,12 +6,12 @@ Created on Thu Apr 30 15:34:53 2020
 """
 
 from configValidation import config
-from doubleloader import both_datasets
+from utils.doubleloader import both_datasets
 import pickle
 import os
 import torch_geometric
 import torch
-from modelCollection import KipfNet, KipfNetDoublePool
+from utils.modelCollection import KipfNet, KipfNetDoublePool
 import numpy as np
 import matplotlib.pyplot as plt
 
